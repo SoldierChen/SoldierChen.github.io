@@ -2,16 +2,20 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle:   <p>  <b>Assistant Professor</b> 
+            <br> <b>Microelectronics Thrust</b> 
+            <br> <b>Hong Kong University of Science and Technology (Guangzhou) </b>
+            </p>
+# <br> <b><a href='https://www.hkust-gz.edu.cn/'>Hong Kong University of Science and Technology (Guangzhou)</a> </b>             <br> <b><a href='#'>xinyuchen@hkust-gz.edu.cn</a></b>
+
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-#  more_info: >
-#    <p>555 your office number</p>
-#    <p>123 your address street</p>
-#    <p>Your City, State 12345</p>
+  more_info: >
+    <p><i>W1-L4-407, HKUST(GZ)</i></p>
+    <p><i>xinyuchen@hkust-gz.edu.cn</i></p>
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -19,8 +23,14 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an *Assistant Professor* of Microelectronics Thrust at [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Prior to joining HKUST(GZ), I held the position of Principal Engineer at [Hisilicon](https://www.hisilicon.com/en/), working on accelerator design for the next-generation DPU. I received my Ph.D. in Computer Science from [National University of Singapore (NUS)](https://nus.edu.sg/) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai WONG](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/). You can find my resume [here](#).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+The primary objective of my research is to develop sustainable computing solutions by leveraging the power of hardware acceleration and system optimization. **My research interest lies predominantly in algorithm-hardware co-design, FPGA-based acceleration, heterogeneous computing, and system design.**
+
+<span style="color:red;">
+<b>I am actively looking for self-motivated PhD students and research assistants. Please feel free to email me your CV if you are interested in my research.</b>
+</span>
+
+
+<!--- My interest lies predominantly in exploring the potential of algorithm-hardware co-designed accelerators for a wide range of areas, including but not limited to, graph analytics, big data processing, and machine learning. --->
