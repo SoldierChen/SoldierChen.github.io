@@ -23,13 +23,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an *Assistant Professor* of Microelectronics Thrust at [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Prior to joining HKUST(GZ), I held the position of Principal Engineer at [Hisilicon](https://www.hisilicon.com/en/), working on accelerator design for the next-generation DPU. I received my Ph.D. in Computer Science from [National University of Singapore (NUS)](https://nus.edu.sg/) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai WONG](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/). You can find my resume [here](#).
+I am an *Assistant Professor* of Microelectronics Thrust at [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Prior to joining HKUST(GZ), I held the position of Principal Engineer at [Hisilicon](https://www.hisilicon.com/en/), working on accelerator design for the next-generation DPU. I received my Ph.D. in computer science from [National University of Singapore (NUS)](https://nus.edu.sg/) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai WONG](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/). You can find my resume [here](#).
 
 
 The primary objective of my research is to develop sustainable computing solutions by leveraging the power of hardware acceleration and system optimization. **My research interest lies predominantly in algorithm-hardware co-design, FPGA-based acceleration, heterogeneous computing, and system design.**
 
 <span style="color:red;">
-<b>I am actively looking for self-motivated PhD students and research assistants. Please feel free to email me your CV if you are interested in my research.</b>
+<b>Openings: I am actively looking for self-motivated PhD students and research assistants with related background. Feel free to email me your CV if you are interested in my research.</b>
 </span>
 
 
