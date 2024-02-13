@@ -15,7 +15,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><i>W1-L4-407, HKUST(GZ)</i></p>
-    <p><i>xinyuchen@hkust-gz.edu.cn</i></p>
+    <p><i>xinyuchen@hkust-gz.edu.cn</i></p> 
 
 
 news: true # includes a list of news items
