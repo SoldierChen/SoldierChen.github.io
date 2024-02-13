@@ -11,7 +11,7 @@ subtitle:   <p>  <b>Assistant Professor</b>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_xinyu.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><i>W1-L4-407, HKUST(GZ)</i></p>
