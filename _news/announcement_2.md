@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Welcome [Yonghao](https://soldierchen.github.io/people/) to join CLab!
+Welcome [Yonghao Chen](https://soldierchen.github.io/people/) to join CLab! :sparkles::clap:
