@@ -33,7 +33,7 @@ Our research group, named as *CLab*, is primarily dedicated to develop sustainab
 
 ## Research Interest
 
-* Algorithm-hardware co-design
+* Algorithm-architecture co-designed accelerator 
 * FPGA-based hardware acceleration
 * Heterogeneous computing with FPGAs/GPUs/NPUs
 * System design and optimization
