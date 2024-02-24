@@ -28,7 +28,7 @@ I am an Assistant Professor of Microelectronics Thrust at [Hong Kong University 
 
 <!-- [Resume](./assets/pdf/xinyu-cv-0111.pdf) / [Google Scholar](https://scholar.google.com/citations?user=h4kJ1UwAAAAJ) / [GitHub](https://github.com/soldierChen) -->
 
-Our research group, named as *CLab*, is primarily dedicated to develop sustainable computing solutions by harnessing the potential of hardware acceleration and system optimization. 
+My research group, named as *CLab*, is primarily dedicated to develop sustainable computing solutions by harnessing the potential of hardware acceleration and system optimization. 
 
 
 ## Research Interest
