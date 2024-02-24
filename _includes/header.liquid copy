@@ -3,16 +3,14 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.first_name %}
-            <span class="font-weight-bold font-italic">
-              {{- "CLab" -}}
-              &nbsp;</span
-            >
-          <span class="font-italic">
-            {{- "@HKUST(GZ)" -}}
-          {% endif %}
+        <a 
+
+          {% include figure.liquid path="assets/img/education_philosophy1.jpg" class="img-fluid rounded z-depth-1" zoomable=true%}
+
         </a>
+      {% elsif site.enable_navbar_social %}
+        <!-- Social Icons -->
+        <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
       <!-- Navbar Toggle -->
       <button
