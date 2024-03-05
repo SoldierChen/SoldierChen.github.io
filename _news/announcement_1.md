@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined HKUST(GZ) as an assistant professor. :sparkles::smile:
+Joined HKUST(GZ) as an assistant professor. :sparkles:
