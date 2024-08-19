@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Welcome [Jiashu Zhang, Chenyu Zhang, Chenxi Xu, Xingyu Chen and Xinyang Ren](https://soldierchen.github.io/people/)  to join CLab! :sparkles::clap:
+Welcome [Jiashu Zhang, Chenyu Zhang, Chenxi Xu, and Xingyu Chen](https://soldierchen.github.io/people/)  to join CLab! :sparkles::clap:
