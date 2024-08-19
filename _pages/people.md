@@ -14,10 +14,6 @@
 - **Mphil, 2024/09 - Present**
 - BS from University of Electronic Science and Technology of China (UESTC)
 
-#### Xinyang REN 
-- **Mphil, 2024/09 - Present**
-- BS from Xi'an Jiaotong University (XJTU)
-
 #### Yonghao CHEN 
 - **PhD, 2024/01 - Present**
 - MS from Sun Yat-sen University (SYSU)

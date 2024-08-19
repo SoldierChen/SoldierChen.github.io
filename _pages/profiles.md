@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: People
-description: Talented and cute members in CLab!
+# description: Talented and cute members in CLab!
 nav: true
 nav_order: 3
 
