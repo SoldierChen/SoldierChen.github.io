@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /teaching/
-title: Customized Computing with FPGAs
-description: MICS-6001C, HKUST(GZ), 2024 Fall 
+title: Teaching
+# description: MICS-6001C, HKUST(GZ), 2024 Fall 
+nav: true
 nav_order: 4
 ---
-
-### About Course 
-Being able to customize hardware architecture to application's exact needs, FPGA-based accelerators deliver better efficiency than general architectures such as CPUs. This course provides a comprehensive overview of FPGA-based customized accelerators and other domian specific architectures from historical contexts to recent trends in system designs spanning a collection of architectural techniques and a variety of application domains. Additionally, the course delves into methods for performance analysis and emphasizes on practical experience with parallel programming for FPGA platforms. This hands-on approach ensures students gain a deep understanding of domain specific architectures.
+-------------
+##### [MICS-6001C Custom Computing with FPGAs, HKUST(GZ), 2024 Fall](https://third-sing-154.notion.site/MICS-6100C-Custom-Computing-with-FPGAs-5b83600bfec3465d91f48f0a43af9df4) 
