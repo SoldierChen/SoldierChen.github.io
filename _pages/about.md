@@ -16,7 +16,6 @@ profile:
   more_info: >
     <p><i>W1-L4-407, HKUST(GZ)</i></p>
     <p><i>xinyuchen@hkust-gz.edu.cn</i></p>  
-# <b><a href='./assets/pdf/xinyu-cv-0111.pdf'>Resume</a> / <a href='https://scholar.google.com/citations?user=h4kJ1UwAAAAJ'>Google Scholar</a></b> 
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
