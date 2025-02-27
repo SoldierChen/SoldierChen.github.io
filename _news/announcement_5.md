@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The paper "[April: Accuracy-Improved Floating-Point Approximation For Neural Network Accelerators](https://soldierchen.github.io/publications/)" has been accepted to **DAC 2025**. 
+The paper "[April: Accuracy-Improved Floating-Point Approximation For Neural Network Accelerators](https://soldierchen.github.io/publications/)" has been accepted to **DAC 2025**. :clap:
