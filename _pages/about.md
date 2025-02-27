@@ -25,7 +25,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 I am an Assistant Professor of Microelectronics Thrust at [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Prior to joining HKUST(GZ), I held the position of Principal Engineer at Hisilicon, working on accelerator design for the next-generation DPU. I received my Ph.D. in computer science from National University of Singapore (NUS) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai WONG](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/). 
-<!-- [Resume](./assets/pdf/xinyu-cv-0111.pdf) / [Google Scholar](https://scholar.google.com/citations?user=h4kJ1UwAAAAJ) / [GitHub](https://github.com/soldierChen) -->
+
 
 My research group, **Custom Computing Lab (CLab)**, is dedicated to develop sustainable computing solutions for **artificial intelligence** and **big data analytics** by harnessing the potential of **customized hardware architectures** and **specialized system designs**. 
 
