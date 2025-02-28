@@ -84,6 +84,10 @@
 - **Mphil, 2024/09 - Present**
 - BS from University of Electronic Science and Technology of China (UESTC)
 
+#### Huangxu CHEN 
+- **Mphil, 2024/09 - Present**
+- BS from South China University of Technology
+
 #### Yonghao CHEN 
 - **PhD, 2024/01 - Present**
 - MS from Sun Yat-sen University (SYSU)
