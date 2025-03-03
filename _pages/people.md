@@ -67,6 +67,14 @@
 
  -->
 
+#### [Zhenlin WU](https://zlwu92.github.io/) 
+- **PhD, 2024/12 - Present**, co-supervised with [Prof. Hongyuan LIU](https://www.liuhongyuan.com/)
+- BS from Beijing Jiaotong University
+- MS from Capital Normal University 
+
+#### Bi ZENG 
+- **PhD, 2024/10 - Present**, co-supervised with [Prof. Hongyuan LIU](https://www.liuhongyuan.com/)
+- BS from Sun Yat-sen University (SYSU)
 
 #### Chenxi XU 
 - **PhD, 2024/09 - Present**
@@ -93,4 +101,14 @@
 - MS from Sun Yat-sen University (SYSU)
 - BS from Sun Yat-sen University (SYSU)
 
- 
+-------------
+
+<div style="display: flex; justify-content: flex-start; margin-left: 3px;">
+  
+  <div style="width:500px;">
+    <img src="/assets/img/gathering 2025-2-28.jpg" alt="Title 1" style="width: 100%;" zoomable=true>
+    <p style="margin-top: 10px; font-size: 18px; text-align: center;">
+      Gathering on February 28, 2025
+    </p>
+  </div>
+</div>
