@@ -69,8 +69,7 @@
 
 #### [Zhenlin WU](https://zlwu92.github.io/) 
 - **PhD, 2024/12 - Present**, co-supervised with [Prof. Hongyuan LIU](https://www.liuhongyuan.com/)
-- BS from Beijing Jiaotong University
-- MS from Capital Normal University 
+- BS from Beijing Jiaotong University, MS from Capital Normal University 
 
 #### Bi ZENG 
 - **PhD, 2024/10 - Present**, co-supervised with [Prof. Hongyuan LIU](https://www.liuhongyuan.com/)
@@ -98,8 +97,7 @@
 
 #### Yonghao CHEN 
 - **PhD, 2024/01 - Present**
-- MS from Sun Yat-sen University (SYSU)
-- BS from Sun Yat-sen University (SYSU)
+- MS from Sun Yat-sen University (SYSU), BS from Sun Yat-sen University (SYSU)
 
 -------------
 
