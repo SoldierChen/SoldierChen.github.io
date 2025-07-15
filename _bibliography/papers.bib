@@ -1,3 +1,50 @@
+
+
+@inproceedings{AxCore,
+  title={AxCore: A Quantization-Aware Approximate GEMM Unit for LLM Inference},
+  author={Zou†, Jiaxiang and Chen†, Yonghao and Chen†, Xingyu and Xu†, Chenxi and Chen, Xinyu},
+  booktitle={IEEE/ACM International Symposium on Microarchitecture (MICRO)},
+  year={2025},
+  note={(to appear)}
+}
+
+@inproceedings{X-SET,
+  title={X-SET: An Efficient Graph Pattern Matching Accelerator With Order-Aware Parallel Intersection Units},
+  author={Xu†, Chenxi and Chen, Xinyu and Shi, Tianhui and Sun, Shixuan and Zhai, Jidong},
+  booktitle={IEEE/ACM International Symposium on Microarchitecture (MICRO)},
+  year={2025},
+  note={(to appear)}
+}
+
+
+@inproceedings{OA-LAMA,
+author = {Chen†, Huangxu and Hao, Yingbo and Chen, Xinyu and Zou, Yi},
+title = {OA-LAMA: An Outlier-Adaptive LLM Inference Accelerator with Memory-Aligned Mixed-Precision Group Quantization},
+year = {2025},
+booktitle = {Proceedings of the 44rd IEEE/ACM International Conference on Computer-Aided Design},
+series = {ICCAD '25},
+note={(to appear)}
+}
+
+
+@inproceedings{Graphitron,
+author = {Zhang, Xinmiao and Feng, Zheng and Liang, Shengwen and Chen, Xinyu and Zhang, Lei and Liu, Cheng},
+title = {Graphitron: A Domain Specific Language for FPGA-Based Graph Processing Accelerator Generation},
+year = {2025},
+isbn = {9798400719219},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3735452.3735533},
+doi = {10.1145/3735452.3735533},
+abstract = {Due to hardware customization capabilities, FPGA-based graph processing accelerators achieve significantly higher energy efficiency than many general-purpose computing engines. However, designing these accelerators remains a substantial challenge for high-level users. To overcome the programming barrier, FPGA-based accelerator design frameworks on top of generic graph processing programming models have been developed to automate accelerator generation through pre-built templates. However, they often tightly couple graph processing algorithms, programming models and processing paradigms, and accelerator architectures, which severely limits the expression scope of the algorithms and may also restrict the performance when the generated accelerators fail to suit dynamic processing patterns of the graph processing algorithms.    In this work, we propose Graphitron, a domain-specific language (DSL) that enables the automatic generation of FPGA-based graph processing accelerators without engaging with the complexities of low-level FPGA designs. Graphitron defines vertices and edges as primitive data types and enables users to implement graph processing algorithms by performing various functionalities on top of these primitive data, which greatly eases the algorithm descriptions for high-level users. During compilation, the graph processing functions are naturally classified into either a vertex-centric processing paradigm or an edge-centric processing paradigm according to the target data types, enabling the generation of accelerator kernels of different characteristics. In addition, because of the explicit binding between the graph processing functions and the data types, the Graphitron compiler can automatically infer the computing and memory access patterns of each processing function within graph processing algorithms and apply corresponding hardware optimizations such as pipelining, data shuffling, and caching. Basically, graph semantic information can be utilized to guide algorithm-specific customization of resulting accelerators for higher performance. Our experiments show that Graphitron can generate accelerators for a broader range of graph processing algorithms than prior template-based generation frameworks. Moreover, the accelerators produced by Graphitron achieve performance comparable to, and in some cases exceeding, that of existing frameworks when the combined programming paradigms are beneficial from an algorithmic perspective.},
+booktitle = {Proceedings of the 26th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems},
+pages = {28–39},
+numpages = {12},
+keywords = {Accelerator Generation, Domain-specific Language, FPGA, Graph Processing, High-level Synthesis},
+location = {Seoul, Republic of Korea},
+series = {LCTES '25}
+}
+
 @inproceedings{wu2025apnet,
   title={Rethinking Dynamic Networks and Heterogeneous Computing with Automatic Parallelization},
   author={WU, Ruilong and Li, Xinjiao and Wang, Yisu and Chen, Xinyu and Kutscher, Dirk},
