@@ -2,9 +2,8 @@
 layout: about
 title: About
 permalink: /
-subtitle:   <p>  <b>Assistant Professor</b> 
-            <br> <b>Microelectronics Thrust</b> 
-            <br> <b>Hong Kong University of Science and Technology (Guangzhou) </b>
+subtitle:   <p>  <b>Assistant Professor </b> 
+            <br> <b>The Hong Kong University of Science and Technology (Guangzhou) </b>
             </p>
 # <br> <b><a href='https://www.hkust-gz.edu.cn/'>Hong Kong University of Science and Technology (Guangzhou)</a> </b>             <br> <b><a href='#'>xinyuchen@hkust-gz.edu.cn</a></b>
 
@@ -23,18 +22,18 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor of Microelectronics Thrust at [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Prior to joining HKUST(GZ), I held the position of Principal Engineer at Hisilicon, working on accelerator design for the next-generation DPU. I received my Ph.D. in computer science from National University of Singapore (NUS) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai WONG](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/). 
+I am an Assistant Professor of Microelectronics Thrust at [The Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Prior to joining HKUST(GZ), I held the position of Principal Engineer at Hisilicon, working on accelerator design for the next-generation DPU. I received my Ph.D. in computer science from National University of Singapore (NUS) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai WONG](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/). 
 
+<img src="/assets/img/clablogo.png" alt=" " width="300"/>
 
-My research group, **Custom Computing Lab (CLab)**, is dedicated to develop sustainable computing solutions for **artificial intelligence** and **big data analytics** by harnessing the potential of **customized hardware architectures** and **specialized system designs**. 
+Our research group, **Custom Computing Lab (CLab)**, is dedicated to exploring sustainable computing solutions for **AI** and **Big Data** through **customized hardware architectures** and **specialized system designs**. 
 
 
 ## Research Interest
 * Hardware accelerator
 * FPGA/GPU/NPU computing
 * System design and optimization
-* Hardware-software co-design
-
+* For AI and big data systems
 
 
 ## Openings 
