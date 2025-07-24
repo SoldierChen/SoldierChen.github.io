@@ -33,7 +33,7 @@ Our research group, **Custom Computing Lab (CLab)**, is dedicated to exploring s
 * Hardware accelerator
 * FPGA/GPU/NPU computing
 * System design and optimization
-* For AI and big data systems
+* For LLM, Embodied AI and Big Data
 
 
 ## Openings 
