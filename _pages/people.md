@@ -66,6 +66,17 @@
 </div>
 
  -->
+#### Jingyu GUO 
+- **PhD, 2025/09 - Present**
+- BS from Tsinghua University (THU), MS from Institute of Computing Technology
+
+#### Rui Meng 
+- **PhD, 2025/09 - Present**
+- BS from National University of Defence Technology (NUDT), MS from Institute of Computing Technology
+
+#### Jiaxiang Zou 
+- **PhD, 2025/09 - Present**
+- BS from University of Electronic Science and Technology of China (UESTC) 
 
 #### [Zhenlin WU](https://zlwu92.github.io/) 
 - **PhD, 2024/12 - Present**, co-supervised with [Prof. Hongyuan LIU](https://www.liuhongyuan.com/)
