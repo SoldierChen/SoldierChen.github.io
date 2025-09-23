@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We received First Prize in the CCF SYS 2025 Graph Computing System Design Challenge. Congratulations to Junnan and Chenxi! :clap:
+We received **First Prize** in the CCF SYS 2025 **Graph Computing System Design Challenge**. Congratulations to Junnan and Chenxi! :clap:
