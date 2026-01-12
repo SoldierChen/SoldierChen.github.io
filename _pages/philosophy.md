@@ -2,7 +2,7 @@
 layout: page
 permalink: /philosophy/
 title: Philosophy
-nav: true
+nav: false
 nav_order: 5
 ---
 
