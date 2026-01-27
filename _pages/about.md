@@ -40,5 +40,7 @@ Our research group, **Custom Computing Lab (CLab)**, is dedicated to exploring s
 
 <span style="color:red;">
 <b>I am actively looking for self-motivated PhD students and research assistants with background in computer engineering, computer science or electronic engineering. Feel free to email me your CV and transcript if you are interested in joining us.</b> :sparkles::wink:
+
+<b>We have new openings focused on VLA training, systems, and architecture for embodied robotics.</b> :wink:
 </span>
 
