@@ -1,123 +1,122 @@
-<!--
+---
+layout: page
+title: People
+permalink: /people/
+nav: true
+nav_order: 3
+description: Members of the Custom Computing Lab.
+---
 
-<div style="display: flex; justify-content: space-around; text-align: center;">
-  
-  <div style="width: 130px;">
-    <img src="/assets/img/stu_pic_yonghao.jpg" alt="Title 1" style="width: 100%;">
-    <p style="margin-top: 10px; font-size: 18px; font-weight: bold; text-align: center;">
-      Chenxi XU
-    </p>
-    <p style="margin-top: -10px; font-size: 16px; text-align: center;">
-      PhD, 2024/09 -  <br>
-      BS: Tsinghua
-    </p>
-  </div>
-  
-  <div style="width: 130px;">
-    <img src="/assets/img/stu_pic_yonghao.jpg" alt="Title 1" style="width: 100%;">
-    <p style="margin-top: 10px; font-size: 17px; font-weight: bold; text-align: center;">
-      Chenyu ZHANG
-    </p>
-    <p style="margin-top: -10px; font-size: 16px; text-align: center;">
-      PhD, 2024/09 -  <br>
-      BS: UESTC
-    </p>
-  </div>
-  
-  <div style="width: 130px;">
-    <img src="/assets/img/stu_pic_yonghao.jpg" alt="Title 1" style="width: 100%;">
-    <p style="margin-top: 10px; font-size: 18px; font-weight: bold; text-align: center;">
-      Jiashu ZHANG
-    </p>
-    <p style="margin-top: -10px; font-size: 16px; text-align: center;">
-      Mphil, 2024/09 -  <br>
-      BS: SUSTech
-    </p>
-  </div>
-
-  <div style="width: 130px;">
-    <img src="/assets/img/stu_pic_yonghao.jpg" alt="Title 1" style="width: 100%;">
-    <p style="margin-top: 10px; font-size: 18px; font-weight: bold; text-align: center;">
-      Xingyu CHEN
-    </p>
-    <p style="margin-top: -10px; font-size: 16px; text-align: center;">
-      Mphil, 2024/09 -  <br>
-      BS: UESTC
-    </p>
-  </div>
-
+<div class="team-intro">
+  <p>
+    We are building <strong>CLab</strong>, a collaborative group working on AI accelerators, LLM systems,
+    graph analytics, and customized computing.
+  </p>
+  <p>
+    Interested in joining us as a PhD student, MPhil student, or research assistant? Please
+    <a href="mailto:xinyuchen@hkust-gz.edu.cn">reach out by email</a>.
+  </p>
 </div>
 
+## PhD Students
 
-
-<div style="display: flex; justify-content: flex-start; margin-left: 36px;">
-  
-  <div style="width: 130px;">
-    <img src="/assets/img/stu_pic_yonghao.jpg" alt="Title 1" style="width: 100%;">
-    <p style="margin-top: 10px; font-size: 18px; font-weight: bold; text-align: center;">
-      Chenxi XU
-    </p>
-    <p style="margin-top: -10px; font-size: 16px; text-align: center;">
-      PhD, 2024/01 -  <br>
-      MS: SYSU <br>
-      BS: SYSU
-    </p>
+<div class="team-grid">
+  <div class="team-card">
+    <div class="team-avatar">JG</div>
+    <h3>Jingyu Guo</h3>
+    <p class="team-role">PhD Student, 2025/09 - Present</p>
+    <p>BS: Tsinghua University (THU)<br>MS: Institute of Computing Technology</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">RM</div>
+    <h3>Rui Meng</h3>
+    <p class="team-role">PhD Student, 2025/09 - Present</p>
+    <p>BS: National University of Defence Technology (NUDT)<br>MS: Institute of Computing Technology</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">JZ</div>
+    <h3>Jiaxiang Zou</h3>
+    <p class="team-role">PhD Student, 2025/09 - Present</p>
+    <p>BS: University of Electronic Science and Technology of China (UESTC)</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">ZW</div>
+    <h3><a href="https://zlwu92.github.io/">Zhenlin Wu</a></h3>
+    <p class="team-role">PhD Student, 2024/12 - Present</p>
+    <p>Co-supervised with <a href="https://www.liuhongyuan.com/">Prof. Hongyuan Liu</a></p>
+    <p>BS: Beijing Jiaotong University<br>MS: Capital Normal University</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">BZ</div>
+    <h3>Bi Zeng</h3>
+    <p class="team-role">PhD Student, 2024/10 - Present</p>
+    <p>Co-supervised with <a href="https://www.liuhongyuan.com/">Prof. Hongyuan Liu</a></p>
+    <p>BS: Sun Yat-sen University (SYSU)</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">CX</div>
+    <h3>Chenxi Xu</h3>
+    <p class="team-role">PhD Student, 2024/09 - Present</p>
+    <p>BS: Tsinghua University (THU)</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">CZ</div>
+    <h3>Chenyu Zhang</h3>
+    <p class="team-role">PhD Student, 2024/09 - Present</p>
+    <p>BS: University of Electronic Science and Technology of China (UESTC)</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">YC</div>
+    <h3>Yonghao Chen</h3>
+    <p class="team-role">PhD Student, 2024/01 - Present</p>
+    <p>MS: Sun Yat-sen University (SYSU)<br>BS: Sun Yat-sen University (SYSU)</p>
   </div>
 </div>
 
- -->
-#### Jingyu GUO 
-- **PhD, 2025/09 - Present**
-- BS from Tsinghua University (THU), MS from Institute of Computing Technology
+## MPhil Students
 
-#### Rui Meng 
-- **PhD, 2025/09 - Present**
-- BS from National University of Defence Technology (NUDT), MS from Institute of Computing Technology
-
-#### Jiaxiang Zou 
-- **PhD, 2025/09 - Present**
-- BS from University of Electronic Science and Technology of China (UESTC) 
-
-#### [Zhenlin WU](https://zlwu92.github.io/) 
-- **PhD, 2024/12 - Present**, co-supervised with [Prof. Hongyuan LIU](https://www.liuhongyuan.com/)
-- BS from Beijing Jiaotong University, MS from Capital Normal University 
-
-#### Bi ZENG 
-- **PhD, 2024/10 - Present**, co-supervised with [Prof. Hongyuan LIU](https://www.liuhongyuan.com/)
-- BS from Sun Yat-sen University (SYSU)
-
-#### Chenxi XU 
-- **PhD, 2024/09 - Present**
-- BS from Tsinghua University (THU)
-
-#### Chenyu ZHANG 
-- **PhD, 2024/09 - Present**
-- BS from University of Electronic Science and Technology of China (UESTC)
-
-#### Jiashu ZHANG 
-- **Mphil, 2024/09 - Present**
-- BS from Southern University of Science and Technology (SUSTech)
-
-#### Xingyu CHEN 
-- **Mphil, 2024/09 - Present**
-- BS from University of Electronic Science and Technology of China (UESTC)
-
-#### Huangxu CHEN 
-- **Mphil, 2024/09 - Present**
-- BS from South China University of Technology
-
-#### Yonghao CHEN 
-- **PhD, 2024/01 - Present**
-- MS from Sun Yat-sen University (SYSU), BS from Sun Yat-sen University (SYSU)
-
--------------
-
-<div style="display: flex; justify-content: flex-start; margin-left: 3px;">
-  
-  <div style="width:500px;">
-    <img src="/assets/img/gathering 2025-2-28.jpg" alt="Title 1" style="width: 100%;" zoomable=true>
-    <p style="margin-top: 10px; font-size: 18px; text-align: center;">
-      Gathering on February 28, 2025
-    </p>
+<div class="team-grid">
+  <div class="team-card">
+    <div class="team-avatar">JH</div>
+    <h3>Jinwen He</h3>
+    <p class="team-role">MPhil Student, 2025/09 - Present</p>
+    <p>BS: Hunan University</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">JH</div>
+    <h3>Junnan Huang</h3>
+    <p class="team-role">MPhil Student, 2025/09 - Present</p>
+    <p>BS: Tianjin University</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">ZW</div>
+    <h3>Zhuoyu Wang</h3>
+    <p class="team-role">MPhil Student, 2025/09 - Present</p>
+    <p>BS: Jilin University</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">JZ</div>
+    <h3>Jiashu Zhang</h3>
+    <p class="team-role">MPhil Student, 2024/09 - Present</p>
+    <p>BS: Southern University of Science and Technology (SUSTech)</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">XC</div>
+    <h3>Xingyu Chen</h3>
+    <p class="team-role">MPhil Student, 2024/09 - Present</p>
+    <p>BS: University of Electronic Science and Technology of China (UESTC)</p>
+  </div>
+  <div class="team-card">
+    <div class="team-avatar">HC</div>
+    <h3>Huangxu Chen</h3>
+    <p class="team-role">MPhil Student, 2024/09 - Present</p>
+    <p>BS: South China University of Technology</p>
   </div>
 </div>
+
+## Group Photo
+
+<figure class="team-photo">
+  <img src="/assets/img/gathering 2025-2-28.jpg" alt="CLab group photo taken on February 28, 2025" zoomable="true">
+  <figcaption>CLab gathering on February 28, 2025</figcaption>
+</figure>

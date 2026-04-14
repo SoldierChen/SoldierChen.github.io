@@ -18,3 +18,67 @@ $max-content-width: {{ site.max_width }};
   "font-awesome/solid",
   "font-awesome/regular"
 ;
+
+.team-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1rem 0 1.5rem;
+}
+
+.team-card,
+.team-intro {
+  background: rgba(127, 127, 127, 0.04);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 16px;
+  padding: 1.1rem 1.15rem;
+}
+
+.team-intro {
+  margin-bottom: 2.2rem;
+}
+
+.team-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p,
+.team-intro p {
+  margin-bottom: 0.55rem;
+}
+
+.team-avatar {
+  align-items: center;
+  background: linear-gradient(135deg, #0f4c81, #2d7fb8);
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: 700;
+  height: 3rem;
+  justify-content: center;
+  margin-bottom: 0.9rem;
+  width: 3rem;
+}
+
+.team-role {
+  color: var(--global-text-color-light);
+  font-weight: 600;
+}
+
+.team-photo {
+  margin-top: 1rem;
+}
+
+.team-photo img {
+  border-radius: 18px;
+  width: 100%;
+}
+
+.team-photo figcaption {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+  text-align: center;
+}

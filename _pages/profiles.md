@@ -1,10 +1,9 @@
 ---
 layout: profiles
-permalink: /people/
-title: People
+permalink: /profiles/
+title: Profiles
 # description: Talented and cute members in CLab!
-nav: true
-nav_order: 3
+nav: false
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
@@ -14,6 +13,5 @@ profiles:
     content: people.md
     image_circular: false # crops the image to make it circular
 ---
-
 
 
