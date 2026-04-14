@@ -22,24 +22,24 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor of Microelectronics Thrust at [The Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Prior to joining HKUST(GZ), I held the position of Principal Engineer at Hisilicon, working on accelerator design for the next-generation DPU. I received my Ph.D. in computer science from National University of Singapore (NUS) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai WONG](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/). 
+I am an Assistant Professor in the Microelectronics Thrust at [The Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Before joining HKUST(GZ), I was a Principal Engineer at Hisilicon, working on accelerator design for next-generation DPUs. I received my Ph.D. in computer science from the National University of Singapore (NUS) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai Wong](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/).
 
 <img src="/assets/img/clablogo.png" alt=" " width="300"/>
 
-Our research group, **Custom Computing Lab (CLab)**, is dedicated to exploring sustainable computing solutions for **AI** and **Big Data** through **customized hardware architectures** and **specialized system designs**. 
+I lead the **Custom Computing Lab (CLab)** at HKUST(GZ). Our group explores sustainable computing solutions for **AI** and **big data** through **customized hardware architectures** and **specialized system designs**.
 
 
-## Research Interest
-* Hardware accelerator
-* FPGA/GPU/NPU computing
-* System design and optimization
-* For LLM, Embodied AI and Big Data
+## Research Areas
+* AI accelerators and LLM inference
+* Heterogeneous computing with FPGA, GPU, and NPU systems
+* Hardware-software co-design for data-intensive applications
+* Algorithm, system, and architecture for embodied AI
 
 
 ## Openings 
 
-<span style="color:red;">
-<b>I am actively looking for self-motivated PhD students and research assistants with background in computer engineering, computer science or electronic engineering. Feel free to email me your CV and transcript if you are interested in joining us.</b> :sparkles::wink:
+<p><span style="color:red;"><b>I am actively looking for self-motivated PhD students and research assistants.</b></span></p>
 
-<b>We have new openings focused on VLA training, systems, and architecture for embodied robotics.</b> :wink:
-</span>
+<p>Applicants with backgrounds in computer engineering, computer science, electronic engineering, or related areas are welcome. Feel free to email me your CV and transcript if you are interested in joining us.</p>
+
+<p>We currently have openings focused on VLA training, systems, and architecture for embodied robotics.</p>

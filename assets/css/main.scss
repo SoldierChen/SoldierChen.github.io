@@ -71,9 +71,26 @@ $max-content-width: {{ site.max_width }};
   margin-top: 1rem;
 }
 
+.team-photo-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 1rem;
+}
+
+.team-photo-grid .team-photo {
+  margin-top: 0;
+}
+
 .team-photo img {
+  aspect-ratio: 16 / 9;
   border-radius: 18px;
+  object-fit: cover;
   width: 100%;
+}
+
+.team-photo-crop-top {
+  object-position: center 35%;
 }
 
 .team-photo figcaption {

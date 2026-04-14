@@ -116,7 +116,17 @@ description: Members of the Custom Computing Lab.
 
 ## Group Photo
 
-<figure class="team-photo">
-  <img src="/assets/img/gathering 2025-2-28.jpg" alt="CLab group photo taken on February 28, 2025" zoomable="true">
-  <figcaption>CLab gathering on February 28, 2025</figcaption>
-</figure>
+<div class="team-photo-grid">
+  <figure class="team-photo">
+    <img src="/assets/img/2025-new-term-begins.jpg" alt="CLab group photo at the beginning of the 2025 fall term" zoomable="true">
+    <figcaption>New term begins, September 2025</figcaption>
+  </figure>
+  <figure class="team-photo">
+    <img class="team-photo-crop-top" src="/assets/img/2025-new-term-gathering.jpg" alt="CLab gathering in September 2025" zoomable="true">
+    <figcaption>CLab new term gathering, September 2025</figcaption>
+  </figure>
+  <figure class="team-photo">
+    <img src="/assets/img/gathering 2025-2-28.jpg" alt="CLab gathering on February 28, 2025" zoomable="true">
+    <figcaption>CLab gathering, February 2025</figcaption>
+  </figure>
+</div>
