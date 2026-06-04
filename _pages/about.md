@@ -43,3 +43,12 @@ I lead the **Custom Computing Lab (CLab)** at HKUST(GZ). Our group explores sust
 <p>Applicants with backgrounds in computer engineering, computer science, electronic engineering, or related areas are welcome. Feel free to email me your CV and transcript if you are interested in joining us.</p>
 
 <p>We currently have openings focused on VLA training, systems, and architecture for embodied robotics.</p>
+
+
+
+## Awards
+
+* First Prize, Graph Computing System Design Challenge, CCF SYS 2025 
+* AMD HACC Outstanding Researcher Award, 2023
+* NUS Research Achievement Award, 2022
+
