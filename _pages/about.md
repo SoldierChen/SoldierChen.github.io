@@ -4,6 +4,7 @@ title: About
 permalink: /
 subtitle:   <p>  <b>Assistant Professor </b> 
             <br> <b>The Hong Kong University of Science and Technology (Guangzhou) </b>
+            <br> <b>Affiliate Assistant Professor @ HKUST</b>
             </p>
 # <br> <b><a href='https://www.hkust-gz.edu.cn/'>Hong Kong University of Science and Technology (Guangzhou)</a> </b>             <br> <b><a href='#'>xinyuchen@hkust-gz.edu.cn</a></b>
 
@@ -22,7 +23,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor in the Microelectronics Thrust at [The Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Before joining HKUST(GZ), I was a Principal Engineer at Hisilicon, working on accelerator design for next-generation DPUs. I received my Ph.D. in computer science from the National University of Singapore (NUS) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai Wong](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/).
+I am an Assistant Professor in the Microelectronics Thrust at [The Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/). Before joining HKUST(GZ), I was a Principal Engineer at Hisilicon, working on next-generation DPUs. I received my Ph.D. in computer science from the National University of Singapore (NUS) in 2022, where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/) and collaborated closely with [Prof. Weng-Fai Wong](https://www.comp.nus.edu.sg/~wongwf/) and [Prof. Deming Chen](https://dchen.ece.illinois.edu/).
 
 <img src="/assets/img/clablogo.png" alt=" " width="300"/>
 
@@ -51,4 +52,3 @@ I lead the **Custom Computing Lab (CLab)** at HKUST(GZ). Our group explores sust
 * First Prize, Graph Computing System Design Challenge, CCF SYS 2025 
 * AMD HACC Outstanding Researcher Award, 2023
 * NUS Research Achievement Award, 2022
-
