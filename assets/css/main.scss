@@ -66,7 +66,7 @@ $max-content-width: {{ site.max_width }};
 .reference-home #navbar .nav-link,
 .reference-home #light-toggle {
   color: #edf7f5;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .reference-home #navbar .nav-item.active > .nav-link {
@@ -116,6 +116,7 @@ $max-content-width: {{ site.max_width }};
 .home-portrait {
   aspect-ratio: 7 / 8;
   display: block;
+  max-width: 100%;
   object-fit: cover;
   object-position: center 28%;
   width: 100%;
@@ -567,7 +568,7 @@ $max-content-width: {{ site.max_width }};
 .reference-inner #navbar .nav-link,
 .reference-inner #light-toggle {
   color: #edf7f5;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .reference-inner #navbar .nav-item.active > .nav-link {
