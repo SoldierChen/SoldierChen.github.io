@@ -1,0 +1,60 @@
+# Schools and courses appear on the page in the order listed here.
+- institution: The Hong Kong University of Science and Technology (Guangzhou)
+  role:
+    en: Instructor
+    zh: 授课教师
+  courses:
+    - code: MICS 5760
+      title: FPGA-based Custom Computing
+      terms:
+        - label:
+            en: Fall 2025
+            zh: 2025 年秋季
+          url: https://third-sing-154.notion.site/MICS-6001C-Custom-Computing-with-FPGAs-2025-Fall-238590a3f57f8006b6dbcbcc14dbf8b8
+        - label:
+            en: Fall 2024
+            zh: 2024 年秋季
+          url: https://third-sing-154.notion.site/MICS-6100C-Custom-Computing-with-FPGAs-5b83600bfec3465d91f48f0a43af9df4
+
+    - code: MICS 5750
+      title: GPU-Accelerated Computing
+      terms:
+        - label:
+            en: Spring 2026
+            zh: 2026 年春季
+        - label:
+            en: Spring 2025
+            zh: 2025 年春季
+          url: https://third-sing-154.notion.site/MICS-6001V-Accelerated-Computing-with-GPUs-131590a3f57f80bcae74c730259f9600?pvs=74
+
+- institution: National University of Singapore
+  role:
+    en: Teaching Assistant
+    zh: 助教
+  courses:
+    - code: CS4225
+      title: Big Data Systems for Data Science
+      terms:
+        - label:
+            en: Spring 2020
+            zh: 2020 年春季
+
+    - code: CG2271
+      title: Real-Time Operating Systems
+      terms:
+        - label:
+            en: Spring 2018
+            zh: 2018 年春季
+        - label:
+            en: Fall 2018
+            zh: 2018 年秋季
+        - label:
+            en: Fall 2019
+            zh: 2019 年秋季
+
+    - code: IT1001
+      title: Introduction to Computing
+      terms:
+        - label:
+            en: Fall 2019
+            zh: 2019 年秋季

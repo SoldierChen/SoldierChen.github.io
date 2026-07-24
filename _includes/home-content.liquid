@@ -1,0 +1,96 @@
+{% assign content_lang = page.lang | default: 'en' %}
+{% assign home_data = site.data.home %}
+{% assign biography = home_data.biography[content_lang] %}
+{% assign openings = home_data.openings[content_lang] %}
+{% assign news_text = home_data.news[content_lang] %}
+
+<section class="home-content-section home-intro" id="biography">
+  <h2>{{ biography.title }}</h2>
+  {% for paragraph in biography.paragraphs %}
+    {{ paragraph | markdownify }}
+  {% endfor %}
+</section>
+
+<section class="home-content-section" id="research">
+  <h2>{{ home_data.research.title[content_lang] }}</h2>
+  <div class="home-research-grid">
+    {% for area in home_data.research.areas %}
+      <article class="home-research-card">
+        <header class="home-research-card-header">
+          <span class="home-research-icon" aria-hidden="true"><i class="fa-solid {{ area.icon }}"></i></span>
+          <h3>{{ area.title[content_lang] }}</h3>
+        </header>
+        <ul class="home-research-points">
+          {% for point in area.points %}
+            <li>{{ point[content_lang] }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-content-section" id="openings">
+  <h2>{{ openings.title }}</h2>
+  <div class="home-opening-panel">
+    <p class="home-opening-lead">{{ openings.lead }}</p>
+    <ul class="home-opening-roles">
+      {% for role in openings.roles %}
+        <li>{{ role }}</li>
+      {% endfor %}
+    </ul>
+    <p class="home-opening-note">{{ openings.body }}</p>
+    <a class="home-opening-email" href="mailto:{{ site.email }}">
+      <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+      <span>{{ openings.cta }}</span>
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<section class="home-content-section" id="news">
+  <div class="home-section-title-row">
+    <h2>{{ news_text.title }}</h2>
+    <a class="home-section-link" href="{% if content_lang == 'zh' %}{{ '/zh/news/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}">
+      {{ news_text.all_label }} →
+    </a>
+  </div>
+  <ol class="home-timeline" tabindex="0" aria-label="{{ news_text.aria_label }}">
+    {% assign latest_news = site.news | reverse %}
+    {% for item in latest_news %}
+      <li>
+        <time datetime="{{ item.date | date: '%Y-%m' }}">
+          {% if content_lang == 'zh' %}
+            {{ item.date | date: '%Y年%m月' }}
+          {% else %}
+            {{ item.date | date: '%b %Y' }}
+          {% endif %}
+        </time>
+        <div>
+          {% if item.category == 'paper' %}
+            <span class="home-tag home-tag-paper">{{ news_text.paper_label }}</span>
+          {% else %}
+            <span class="home-tag home-tag-news">{{ news_text.default_label }}</span>
+          {% endif %}
+          {% if content_lang == 'zh' %}
+            {{ item.zh | default: item.content | markdownify | strip_html | replace: ':tada:', '' | replace: ':clap:', '' | replace: ':sparkles:', '' | strip }}
+          {% else %}
+            {{ item.content | strip_html | replace: ':tada:', '' | replace: ':clap:', '' | replace: ':sparkles:', '' | strip }}
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="home-content-section" id="awards">
+  <h2>{{ home_data.awards.title[content_lang] }}</h2>
+  <ul class="home-award-list">
+    {% for award in home_data.awards.items %}
+      <li>
+        <strong>{{ award.title[content_lang] }}</strong>
+        <span>{{ award.meta }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

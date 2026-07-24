@@ -38,16 +38,42 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
-    <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
-    <!-- Author -->
-    <div class="author">
+  <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-12{% endif %}">
+    {% assign venue_abbr = entry.abbr %}
+    {% if venue_abbr == blank %}
+      {% if entry.type == 'article' %}
+        {% assign venue_source = entry.journal %}
+      {% else %}
+        {% assign venue_source = entry.booktitle %}
+      {% endif %}
+      {% if venue_source contains '(' %}
+        {% assign venue_parts = venue_source | split: '(' %}
+        {% assign venue_abbr = venue_parts | last | remove: ')' | strip %}
+      {% elsif venue_source contains 'Journal of Computer Science and Technology' %}
+        {% assign venue_abbr = 'JCST' %}
+      {% else %}
+        {% assign venue_abbr = venue_source %}
+      {% endif %}
+    {% endif %}
+    {% assign short_year = entry.year | slice: 2, 2 %}
+
+    <div class="publication-citation-line">
+      {% assign entry_note_normalized = entry.note | downcase | strip %}
+      {% if entry_note_normalized == 'to appear' %}
+        <span class="publication-status">Accepted</span>
+      {% endif %}
+      <span class="venue-prefix">[{{ venue_abbr }}'{{ short_year }}]</span>
+      <span class="author">
       {% assign author_array_size = entry.author_array | size %}
 
       {% assign author_array_limit = author_array_size %}
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
         {% assign author_array_limit = site.max_author_limit %}
+      {% endif %}
+      {% assign first_author = entry.author_array | first %}
+      {% assign first_author_is_advised = false %}
+      {% if first_author.last contains '†' %}
+        {% assign first_author_is_advised = true %}
       {% endif %}
 
       {% for author in entry.author_array limit: author_array_limit %}
@@ -74,10 +100,13 @@
           {% if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif %}
         {% endif %}
         {% if author_is_self %}
-          <em>
+          <span class="author-self">
             {{- author.first }}
             {{ author.last -}}
-          </em>
+          </span>
+          {% if first_author_is_advised and forloop.last and author_array_limit == author_array_size %}
+            <sup class="corresponding-author" title="Corresponding author">#</sup>
+          {% endif %}
         {% else %}
           {% if coauthor_url %}
             <a href="{{coauthor_url}}">
@@ -124,7 +153,9 @@
           {{- more_authors_hide -}}
         </span>
       {% endif %}
+      </span>
     </div>
+    <div class="title">{{ entry.title }}</div>
 
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
@@ -132,9 +163,9 @@
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{entry.journal}}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{entry.booktitle}}</em> {% endcapture %}
+      {% capture entrytype %}<em>{{entry.booktitle}}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
-      {% capture entrytype %}<em>{{entry.school}}</em> {% endcapture %}
+      {% capture entrytype %}<em>{{entry.school}}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
@@ -146,67 +177,96 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
-    </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
 
-    <!-- Links/Buttons -->
-    <div class="links">
+    <div class="publication-meta-line">
+      <span class="periodical">{{ periodical | strip }}</span>
+      {% if entry.note and entry_note_normalized != 'to appear' %}
+        <span class="publication-note">{{ entry.note | strip }}</span>
+      {% endif %}
+
+      <!-- Compact publication links -->
+      <span class="links publication-icon-links">
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        <a class="abstract publication-icon" role="button" title="Abstract" aria-label="Abstract"><i class="fa-solid fa-align-left"></i></a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="publication-icon" title="arXiv" aria-label="arXiv"
+          ><i class="fa-solid fa-file-lines"></i
+        ></a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="bibtex publication-icon" role="button" title="BibTeX" aria-label="BibTeX"><i class="fa-solid fa-quote-right"></i></a>
       {% endif %}
       {% if entry.html %}
-        <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        <a href="{{ entry.html }}" class="publication-icon" title="HTML" aria-label="HTML"><i class="fa-solid fa-globe"></i></a>
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf }}" class="publication-icon" title="PDF" aria-label="PDF"><i class="fa-solid fa-file-pdf"></i></a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a
+            href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}"
+            class="publication-icon"
+            title="PDF"
+            aria-label="PDF"
+            ><i class="fa-solid fa-file-pdf"></i
+          ></a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp }}" class="publication-icon" title="Supplement" aria-label="Supplement"
+            ><i class="fa-solid fa-paperclip"></i
+          ></a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a
+            href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}"
+            class="publication-icon"
+            title="Supplement"
+            aria-label="Supplement"
+            ><i class="fa-solid fa-paperclip"></i
+          ></a>
         {% endif %}
       {% endif %}
       {% if entry.video %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Video</a>
+        <a class="abstract publication-icon" role="button" title="Video" aria-label="Video"><i class="fa-solid fa-video"></i></a>
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
+        <a href="{{ entry.blog }}" class="publication-icon" title="Blog" aria-label="Blog"><i class="fa-solid fa-pen-nib"></i></a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a href="{{ entry.code }}" class="publication-icon" title="Code" aria-label="Code"><i class="fa-brands fa-github"></i></a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster }}" class="publication-icon" title="Poster" aria-label="Poster"><i class="fa-solid fa-image"></i></a>
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a
+            href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}"
+            class="publication-icon"
+            title="Poster"
+            aria-label="Poster"
+            ><i class="fa-solid fa-image"></i
+          ></a>
         {% endif %}
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides }}" class="publication-icon" title="Slides" aria-label="Slides"><i class="fa-solid fa-display"></i></a>
         {% else %}
-          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a
+            href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}"
+            class="publication-icon"
+            title="Slides"
+            aria-label="Slides"
+            ><i class="fa-solid fa-display"></i
+          ></a>
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="publication-icon" title="Website" aria-label="Website"><i class="fa-solid fa-link"></i></a>
       {% endif %}
+      </span>
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or  entry.eprint or entry.pmid or entry.isbn %}

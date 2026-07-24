@@ -1,12 +1,7 @@
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and site.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
-    >
+    <div class="table-responsive news-scroll" tabindex="0" aria-label="News archive">
       <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
         {% if include.limit and site.announcements.limit %}
@@ -16,12 +11,22 @@
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            <th scope="row">
+              {% if page.lang == 'zh' %}
+                {{ item.date | date: '%Y年%m月' }}
               {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {{ item.date | date: '%b %Y' }}
+              {% endif %}
+            </th>
+            <td>
+              {% if page.lang == 'zh' %}
+                {{ item.zh | default: item.content | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                {% if item.inline %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% else %}
+                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
               {% endif %}
             </td>
           </tr>

@@ -1,0 +1,35 @@
+{% assign content_lang = page.lang | default: 'en' %}
+
+<div class="teaching-experience">
+  {% for school in site.data.teaching %}
+    <section class="teaching-school">
+      <header class="teaching-school-header">
+        <span class="teaching-school-icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></span>
+        <h2 class="teaching-institution">{{ school.institution }}</h2>
+        {% if school.role %}
+          <span class="teaching-school-role">{{ school.role[content_lang] }}</span>
+        {% endif %}
+      </header>
+      <ul class="teaching-course-list">
+        {% for course in school.courses %}
+          <li>
+            <span class="teaching-course-name">
+              <strong>{{ course.code }}:</strong>
+              <span>{{ course.title }}</span>
+            </span>
+            <span class="teaching-course-terms">
+              {%- for term in course.terms -%}
+                {%- unless forloop.first -%}<span class="teaching-term-separator">{% if content_lang == 'zh' %}；{% else %}; {% endif %}</span>{%- endunless -%}
+                {%- if term.url -%}
+                  <a href="{{ term.url }}" target="_blank" rel="noopener">{{ term.label[content_lang] }}</a>
+                {%- else -%}
+                  <span>{{ term.label[content_lang] }}</span>
+                {%- endif -%}
+              {%- endfor -%}
+            </span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>

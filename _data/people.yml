@@ -1,0 +1,152 @@
+intro:
+  en:
+    - >-
+      We are building **CLab**, a collaborative group working on AI accelerators, LLM systems,
+      graph analytics, and customized computing.
+    - >-
+      Interested in joining us as a PhD student, MPhil student, or research assistant?
+      Please [reach out by email](mailto:xinyuchen@hkust-gz.edu.cn).
+  zh:
+    - >-
+      我们正在建设 **CLab**，研究方向包括人工智能加速器、大模型系统、图计算和定制计算。
+    - >-
+      欢迎有意申请博士、MPhil 或研究助理的同学通过[邮件联系](mailto:xinyuchen@hkust-gz.edu.cn)。
+
+# Sections and members appear on the page in the order listed here.
+sections:
+  - title:
+      en: PhD Students
+      zh: 博士生
+    members:
+      - name: Jingyu Guo
+        initials: JG
+        start: 2025/09
+        education:
+          - degree: BS
+            institution: Tsinghua University (THU)
+          - degree: MS
+            institution: Institute of Computing Technology
+      - name: Rui Meng
+        initials: RM
+        start: 2025/09
+        education:
+          - degree: BS
+            institution: National University of Defence Technology (NUDT)
+          - degree: MS
+            institution: Institute of Computing Technology
+      - name: Jiaxiang Zou
+        initials: JZ
+        start: 2025/09
+        education:
+          - degree: BS
+            institution: University of Electronic Science and Technology of China (UESTC)
+      - name: Zhenlin Wu
+        initials: ZW
+        start: 2024/12
+        website: https://zlwu92.github.io/
+        co_supervisor:
+          name: Prof. Hongyuan Liu
+          url: https://www.liuhongyuan.com/
+        education:
+          - degree: BS
+            institution: Beijing Jiaotong University
+          - degree: MS
+            institution: Capital Normal University
+      - name: Bi Zeng
+        initials: BZ
+        start: 2024/10
+        co_supervisor:
+          name: Prof. Hongyuan Liu
+          url: https://www.liuhongyuan.com/
+        education:
+          - degree: BS
+            institution: Sun Yat-sen University (SYSU)
+      - name: Chenxi Xu
+        initials: CX
+        start: 2024/09
+        education:
+          - degree: BS
+            institution: Tsinghua University (THU)
+      - name: Chenyu Zhang
+        initials: CZ
+        start: 2024/09
+        education:
+          - degree: BS
+            institution: University of Electronic Science and Technology of China (UESTC)
+      - name: Yonghao Chen
+        initials: YC
+        start: 2024/01
+        education:
+          - degree: MS
+            institution: Sun Yat-sen University (SYSU)
+          - degree: BS
+            institution: Sun Yat-sen University (SYSU)
+  - title:
+      en: MPhil Students
+      zh: MPhil 学生
+    members:
+      - name: Jinwen He
+        initials: JH
+        start: 2025/09
+        education:
+          - degree: BS
+            institution: Hunan University
+      - name: Junnan Huang
+        initials: JH
+        start: 2025/09
+        education:
+          - degree: BS
+            institution: Tianjin University
+      - name: Zhuoyu Wang
+        initials: ZW
+        start: 2025/09
+        education:
+          - degree: BS
+            institution: Jilin University
+      - name: Jiashu Zhang
+        initials: JZ
+        start: 2024/09
+        education:
+          - degree: BS
+            institution: Southern University of Science and Technology (SUSTech)
+      - name: Xingyu Chen
+        initials: XC
+        start: 2024/09
+        education:
+          - degree: BS
+            institution: University of Electronic Science and Technology of China (UESTC)
+      - name: Huangxu Chen
+        initials: HC
+        start: 2024/09
+        education:
+          - degree: BS
+            institution: South China University of Technology
+
+# Keep photos newest first.
+photos:
+  title:
+    en: Group Photo
+    zh: 团队合影
+  items:
+    - image: 2025-new-term-begins.jpg
+      alt:
+        en: CLab group photo at the beginning of the 2025 fall term
+        zh: CLab 2025 年秋季学期开学合影
+      caption:
+        en: New term begins, September 2025
+        zh: 新学期开始，2025 年 9 月
+    - image: 2025-new-term-gathering.jpg
+      crop: top
+      alt:
+        en: CLab gathering in September 2025
+        zh: CLab 2025 年 9 月新学期聚会
+      caption:
+        en: CLab new term gathering, September 2025
+        zh: CLab 新学期聚会，2025 年 9 月
+    - image: gathering 2025-2-28.jpg
+      alt:
+        en: CLab gathering on February 28, 2025
+        zh: CLab 2025 年 2 月 28 日聚会
+      caption:
+        en: CLab gathering, February 2025
+        zh: CLab 聚会，2025 年 2 月

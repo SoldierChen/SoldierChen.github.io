@@ -1,0 +1,39 @@
+# Service entries appear on the page in the order listed here.
+- role:
+    en: Student Forum Chair
+    zh: 学生论坛主席
+  detail:
+    en: ICCD (2026)
+    zh: ICCD（2026）
+
+- role:
+    en: Technical Program Committee
+    zh: 技术程序委员会委员
+  detail:
+    en: MICRO (2026), VLDB (2026), ICCD (2026), ASP-DAC (2026), and ChinaSys (2024)
+    zh: MICRO（2026）、VLDB（2026）、ICCD（2026）、ASP-DAC（2026）及 ChinaSys（2024）
+
+- role:
+    en: Demo Program Committee
+    zh: 演示程序委员会委员
+  detail:
+    en: ICPP (2026)
+    zh: ICPP（2026）
+
+- role:
+    en: Journal Reviewer
+    zh: 期刊审稿人
+  detail:
+    en: >-
+      TPDS (2025–2026), TCAD (2024–2026), TCASAI (2024–2025), TC (2024), TKDE (2024), TRETS (2025),
+      TODAES (2025), Information Sciences (2024), and Frontiers of Computer Science (2026)
+    zh: >-
+      TPDS（2025–2026）、TCAD（2024–2026）、TCASAI（2024–2025）、TC（2024）、TKDE（2024）、
+      TRETS（2025）、TODAES（2025）、Information Sciences（2024）及 Frontiers of Computer Science（2026）
+
+- role:
+    en: Conference Reviewer
+    zh: 会议审稿人
+  detail:
+    en: ICDCS (2024) and CCGrid (2024)
+    zh: ICDCS（2024）及 CCGrid（2024）

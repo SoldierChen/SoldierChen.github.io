@@ -10,8 +10,7 @@ email: xinyuchen@hkust-gz.edu.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Xinyu Chen's academic homepage at HKUST(GZ), featuring research on AI accelerators, LLM systems, customized computing, and data-intensive architectures.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Hosted by&nbsp;<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: xinyu chen, hkust gz, ai accelerators, llm inference, microarchitecture, fpga, gpu, customized computing, graph analytics
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: hkust-gz.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -153,12 +152,9 @@ giscus:
 disqus_shortname: al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-# External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+# External RSS sources are disabled. The template's example Medium feed made
+# every local build depend on an external network request.
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -214,6 +210,8 @@ exclude:
   - Gemfile.lock
   - INSTALL.md
   - LICENSE
+  - _posts/2023-07-04-jupyter-notebook.md
+  - assets/jupyter
   - package.json
   - package-lock.json
   - purgecss.config.js
@@ -308,8 +306,8 @@ scholar:
 
 # Display different badges withs stats for your publications
 enable_publication_badges:
-  altmetric: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
-  dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
+  altmetric: false # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
+  dimensions: false # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -360,18 +358,18 @@ imagemagick:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: true # enables google analytics
+enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
-enable_masonry: true # enables automatic project cards arrangement
-enable_math: true # enables math typesetting (uses MathJax)
+enable_masonry: false # enables automatic project cards arrangement
+enable_math: false # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
+enable_darkmode: false # keep the site on its unified light theme
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
-enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_medium_zoom: false # enables image zoom feature (as on medium.com)
+enable_progressbar: false # disables the template scroll indicator
 
 # -----------------------------------------------------------------------------
 # Library versions

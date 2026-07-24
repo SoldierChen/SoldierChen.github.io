@@ -1,0 +1,128 @@
+profile:
+  name: Xinyu Chen
+  image: prof_pic_xinyu.jpg
+  role:
+    en: Assistant Professor
+    zh: 助理教授
+  affiliations:
+    - url: https://www.hkust-gz.edu.cn/
+      en: The Hong Kong University of Science and Technology (Guangzhou)
+      zh: 香港科技大学（广州）
+    - url: https://hkust.edu.hk/
+      en: Affiliate Assistant Professor @ HKUST
+      zh: 香港科技大学兼任助理教授
+  office: W1-L4-407, HKUST(GZ)
+
+biography:
+  en:
+    title: Biography
+    paragraphs:
+      - >-
+        I am an Assistant Professor in the Microelectronics Thrust at
+        [The Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/).
+        Before joining HKUST(GZ), I was a Principal Engineer at Hisilicon, working on next-generation DPUs.
+        I received my Ph.D. in computer science from the National University of Singapore (NUS) in 2022,
+        where I was supervised by [Prof. Bingsheng He](https://www.comp.nus.edu.sg/~hebs/)
+        and collaborated closely with [Prof. Weng-Fai Wong](https://www.comp.nus.edu.sg/~wongwf/)
+        and [Prof. Deming Chen](https://dchen.ece.illinois.edu/).
+      - >-
+        I lead the **Custom Computing Lab (CLab)** at HKUST(GZ). Our group develops sustainable
+        computing solutions for AI and big data through customized hardware architectures and specialized system designs.
+  zh:
+    title: 个人简介
+    paragraphs:
+      - >-
+        我是[香港科技大学（广州）](https://www.hkust-gz.edu.cn/)微电子学域助理教授。
+        加入香港科技大学（广州）之前，我曾任华为海思主任工程师，参与下一代 DPU 的研发。
+        我于 2022 年获得新加坡国立大学计算机科学博士学位，导师为
+        [Bingsheng He 教授](https://www.comp.nus.edu.sg/~hebs/)，并与
+        [Weng-Fai Wong 教授](https://www.comp.nus.edu.sg/~wongwf/)和
+        [Deming Chen 教授](https://dchen.ece.illinois.edu/)密切合作。
+      - >-
+        我在香港科技大学（广州）负责**定制计算实验室（CLab）**。
+        团队围绕人工智能与大数据应用，研究可持续的定制硬件体系结构与专用系统设计。
+
+research:
+  title:
+    en: Research Areas
+    zh: 研究方向
+  areas:
+    - icon: fa-microchip
+      title:
+        en: Architecture
+        zh: 体系结构
+      points:
+        - en: Efficient Domain-Specific Accelerators (DSA) for LLM/VLA
+          zh: 面向 LLM/VLA 的高效领域专用加速器（DSA）
+        - en: Near-Memory / Processing-in-Memory (PIM) Computing
+          zh: 近存储 / 存内计算（PIM）
+    - icon: fa-network-wired
+      title:
+        en: System
+        zh: 系统
+      points:
+        - en: Efficient system design for LLMs/VLAs
+          zh: 面向 LLM/VLA 的高效系统设计
+        - en: Heterogeneous computing with FPGA, GPU, and NPUs
+          zh: 基于 FPGA、GPU 和 NPU 的异构计算
+    - icon: fa-diagram-project
+      title:
+        en: Algorithm
+        zh: 算法
+      points:
+        - en: Hardware-aware algorithms for efficient AI computing
+          zh: 面向高效人工智能计算的硬件感知算法
+        - en: Algorithm-system-architecture co-design
+          zh: 算法-系统-体系结构协同设计
+
+openings:
+  en:
+    title: Openings
+    lead: "I am actively recruiting self-motivated candidates for the following positions:"
+    roles:
+      - PhD Students
+      - MPhil Students
+      - Research Assistants
+    body: Applicants with backgrounds in computer engineering, computer science, electronic engineering, or related fields are welcome.
+    cta: Email your CV and transcript
+  zh:
+    title: 招生招聘
+    lead: "长期招收积极主动的申请者："
+    roles:
+      - 博士生
+      - MPhil 学生
+      - 研究助理
+    body: 欢迎计算机工程、计算机科学、电子工程及相关专业的同学申请。
+    cta: 通过邮件发送简历和成绩单
+
+news:
+  en:
+    title: Recent News
+    all_label: All news
+    aria_label: Recent news
+    paper_label: Paper
+    default_label: News
+  zh:
+    title: 近期动态
+    all_label: 全部动态
+    aria_label: 近期动态
+    paper_label: 论文
+    default_label: 动态
+
+awards:
+  title:
+    en: Awards
+    zh: 奖项荣誉
+  items:
+    - title:
+        en: First Prize, Graph Computing System Design Challenge
+        zh: 图计算系统设计挑战赛一等奖
+      meta: CCF SYS · 2025
+    - title:
+        en: AMD HACC Outstanding Researcher Award
+        zh: AMD HACC Outstanding Researcher Award
+      meta: AMD · 2023
+    - title:
+        en: NUS Research Achievement Award
+        zh: 新加坡国立大学科研成就奖
+      meta: National University of Singapore · 2022

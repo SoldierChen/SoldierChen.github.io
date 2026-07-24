@@ -1,0 +1,10 @@
+{% assign content_lang = page.lang | default: 'en' %}
+
+<ul class="service-list">
+  {% for item in site.data.service %}
+    <li>
+      <strong>{{ item.role[content_lang] }}:</strong>
+      <span>{{ item.detail[content_lang] }}</span>
+    </li>
+  {% endfor %}
+</ul>

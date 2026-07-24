@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /publications/
+translation_url: /zh/publications/
 title: Publications
-description: Students with † are advised by me; Students with * are co-first authors.
+description: "Students with † are advised by me; Authors with * are co-first authors; # denotes the corresponding author."
 nav: true
 nav_order: 2
 ---

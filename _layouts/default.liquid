@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{ page.lang | default: site.lang }}">
   <!-- Head -->
   <head>
     {% if page.redirect %}
@@ -16,7 +16,7 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}{% if page.layout == 'about' %} reference-home{% elsif page.layout == 'page' %} reference-inner{% endif %}{% if page.lang == 'zh' %} lang-zh{% endif %}">
     <!-- Header -->
     {% include header.liquid %}
 

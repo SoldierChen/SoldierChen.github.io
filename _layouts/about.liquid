@@ -1,77 +1,66 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+{% assign content_lang = page.lang | default: 'en' %}
+{% assign profile = site.data.home.profile %}
+<div class="home-page-shell">
+  <aside class="home-profile-card" aria-label="{% if page.lang == 'zh' %}个人资料{% else %}Profile{% endif %}">
+    <img
+      class="home-portrait"
+      src="{{ profile.image | prepend: '/assets/img/' | relative_url }}"
+      alt="{% if page.lang == 'zh' %}陈新宇的个人照片{% else %}Portrait of Xinyu Chen{% endif %}"
+    >
+    <div class="home-profile-body">
+      <h1>{{ profile.name }}</h1>
+      <p class="home-role">{{ profile.role[content_lang] }}</p>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = page.profile.image
-            cache_bust = true
-          %}
+      <div class="home-affiliation">
+        {% for affiliation in profile.affiliations %}
+          <a href="{{ affiliation.url }}" target="_blank" rel="noopener">{{ affiliation[content_lang] }}</a>
+        {% endfor %}
+      </div>
+
+      <dl class="home-contact-list">
+        <div>
+          <dt>{% if page.lang == 'zh' %}邮箱{% else %}Email{% endif %}</dt>
+          <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+        </div>
+        <div>
+          <dt>{% if page.lang == 'zh' %}办公室{% else %}Office{% endif %}</dt>
+          <dd>{{ profile.office }}</dd>
+        </div>
+      </dl>
+
+      <div class="home-profile-links">
+        {% if site.scholar_userid %}
+          <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener">
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            <span>Google Scholar</span>
+          </a>
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+        {% endif %}
+        {% if site.orcid_id %}
+          <a href="https://orcid.org/{{ site.orcid_id }}" target="_blank" rel="noopener">
+            <i class="ai ai-orcid" aria-hidden="true"></i>
+            <span>ORCID</span>
+          </a>
+        {% endif %}
+        {% if site.linkedin_username %}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
         {% endif %}
       </div>
-    {% endif %}
+    </div>
+  </aside>
 
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-
-      <br/>
-      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=0e1633&w=400&t=tt&d=Bnxxja3o_IcH_lA_4D22qWc54GmyyeiHlhKTN8PyYdA&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=cdd4d9'>
-      </script>
-
-  </article>
+  <main class="home-main">
+    {{ content }}
+  </main>
 </div>

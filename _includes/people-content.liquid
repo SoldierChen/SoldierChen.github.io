@@ -1,0 +1,60 @@
+{% assign content_lang = page.lang | default: 'en' %}
+{% assign people = site.data.people %}
+{% assign present_label = 'Present' %}
+{% if content_lang == 'zh' %}
+  {% assign present_label = '至今' %}
+{% endif %}
+
+<div class="team-intro">
+  {% for paragraph in people.intro[content_lang] %}
+    {{ paragraph | markdownify }}
+  {% endfor %}
+</div>
+
+{% for section in people.sections %}
+  <h2>{{ section.title[content_lang] }}</h2>
+  <div class="team-grid">
+    {% for member in section.members %}
+      <div class="team-card">
+        <div class="team-avatar">{{ member.initials }}</div>
+        <h3>
+          {% if member.website %}
+            <a href="{{ member.website }}">{{ member.name }}</a>
+          {% else %}
+            {{ member.name }}
+          {% endif %}
+        </h3>
+        <p class="team-role">{{ member.start }} - {{ member.end | default: present_label }}</p>
+        {% if member.co_supervisor %}
+          <p>
+            {% if content_lang == 'zh' %}与{% else %}Co-supervised with{% endif %}
+            <a href="{{ member.co_supervisor.url }}">{{ member.co_supervisor.name }}</a>
+            {% if content_lang == 'zh' %}共同指导{% endif %}
+          </p>
+        {% endif %}
+        {% if member.education %}
+          <p>
+            {% for education in member.education %}
+              {{ education.degree }}: {{ education.institution }}{% unless forloop.last %}<br>{% endunless %}
+            {% endfor %}
+          </p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+<h2>{{ people.photos.title[content_lang] }}</h2>
+<div class="team-photo-grid">
+  {% for photo in people.photos.items %}
+    <figure class="team-photo">
+      <img
+        {% if photo.crop == 'top' %}class="team-photo-crop-top"{% endif %}
+        src="{{ photo.image | prepend: '/assets/img/' | relative_url }}"
+        alt="{{ photo.alt[content_lang] }}"
+        zoomable="true"
+      >
+      <figcaption>{{ photo.caption[content_lang] }}</figcaption>
+    </figure>
+  {% endfor %}
+</div>
