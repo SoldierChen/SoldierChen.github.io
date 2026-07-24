@@ -12,21 +12,13 @@
         {% for item in news limit: news_limit %}
           <tr>
             <th scope="row">
-              {% if page.lang == 'zh' %}
-                {{ item.date | date: '%Y年%m月' }}
-              {% else %}
-                {{ item.date | date: '%b %Y' }}
-              {% endif %}
+              {{ item.date | date: '%b %Y' }}
             </th>
             <td>
-              {% if page.lang == 'zh' %}
-                {{ item.zh | default: item.content | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
-                {% if item.inline %}
-                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                {% else %}
-                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                {% endif %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
             </td>
           </tr>

@@ -1,6 +1,6 @@
 # Xinyu Chen Academic Website
 
-This repository contains the bilingual personal and CLab website at
+This repository contains the personal and CLab website at
 [soldierchen.github.io](https://soldierchen.github.io/). The site uses Jekyll and is based on the
 [al-folio](https://github.com/alshedivat/al-folio) theme.
 
@@ -20,9 +20,6 @@ Most routine updates only require editing YAML, Markdown, or BibTeX. The Liquid 
 | Publication PDFs | `assets/pdf/` |
 | Profile, people, and group images | `assets/img/` |
 | Site-wide settings and social account IDs | `_config.yml` |
-
-English and Chinese text are stored together using `en` and `zh` fields. Do not create separate
-HTML blocks for the two languages.
 
 ## Local Preview
 
@@ -72,7 +69,7 @@ co_supervisor:
   url: https://example.com/
 ```
 
-The end date defaults to `Present` or `至今`. To show a former member, add an explicit value:
+The end date defaults to `Present`. To show a former member, add an explicit value:
 
 ```yaml
 end: 2028/06
@@ -85,12 +82,8 @@ newest photo first.
 
 ```yaml
 - image: 2026-group-photo.jpg
-  alt:
-    en: CLab group photo in September 2026
-    zh: CLab 2026 年 9 月团队合影
-  caption:
-    en: New term begins, September 2026
-    zh: 新学期开始，2026 年 9 月
+  alt: CLab group photo in September 2026
+  caption: New term begins, September 2026
 ```
 
 Add `crop: top` when the photo needs a higher crop position.
@@ -102,20 +95,14 @@ Add a course under the appropriate school's `courses` list in `_data/teaching.ym
 ```yaml
 - institution: The Hong Kong University of Science and Technology (Guangzhou)
   # Optional:
-  # role:
-  #   en: Instructor
-  #   zh: 授课教师
+  # role: Instructor
   courses:
     - code: MICS 5760
       title: FPGA-based Custom Computing
       terms:
-        - label:
-            en: Fall 2026
-            zh: 2026 年秋季
+        - label: Fall 2026
           url: https://example.com/course
-        - label:
-            en: Fall 2025
-            zh: 2025 年秋季
+        - label: Fall 2025
 ```
 
 Add `url` only when that term has a course page. Terms without `url` remain plain text.
@@ -125,12 +112,8 @@ Add `url` only when that term has a course page. Terms without `url` remain plai
 Add one item to `_data/service.yml`:
 
 ```yaml
-- role:
-    en: Technical Program Committee
-    zh: 技术程序委员会委员
-  detail:
-    en: MICRO (2027)
-    zh: MICRO（2027）
+- role: Technical Program Committee
+  detail: MICRO (2027)
 ```
 
 ## Update The Homepage
@@ -138,8 +121,8 @@ Add one item to `_data/service.yml`:
 Edit `_data/home.yml`.
 
 - `profile` controls the left profile card.
-- `biography` contains Markdown paragraphs for both languages.
-- `research.areas` controls the bilingual research-area cards.
+- `biography` contains Markdown paragraphs.
+- `research.areas` controls the research-area cards.
 - `openings` controls recruitment text.
 - `awards.items` controls the awards list.
 
@@ -147,14 +130,10 @@ To add a research area:
 
 ```yaml
 - icon: fa-microchip
-  title:
-    en: Architecture
-    zh: 体系结构
+  title: Architecture
   points:
-    - en: English research point
-      zh: 中文研究点
-    - en: Another English research point
-      zh: 另一个中文研究点
+    - First research point
+    - Another research point
 ```
 
 ## Add News
@@ -168,8 +147,6 @@ date: 2026-08-01 07:59:00+0800
 inline: true
 related_posts: false
 category: paper
-zh: >-
-  论文 “[Paper Title](/zh/publications/)” 被 MICRO 2026 接收。祝贺 First Author！
 ---
 
 Our paper "[Paper Title](/publications/)" has been accepted to **MICRO 2026**.

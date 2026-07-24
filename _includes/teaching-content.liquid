@@ -1,5 +1,3 @@
-{% assign content_lang = page.lang | default: 'en' %}
-
 <div class="teaching-experience">
   {% for school in site.data.teaching %}
     <section class="teaching-school">
@@ -7,7 +5,7 @@
         <span class="teaching-school-icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></span>
         <h2 class="teaching-institution">{{ school.institution }}</h2>
         {% if school.role %}
-          <span class="teaching-school-role">{{ school.role[content_lang] }}</span>
+          <span class="teaching-school-role">{{ school.role }}</span>
         {% endif %}
       </header>
       <ul class="teaching-course-list">
@@ -19,11 +17,11 @@
             </span>
             <span class="teaching-course-terms">
               {%- for term in course.terms -%}
-                {%- unless forloop.first -%}<span class="teaching-term-separator">{% if content_lang == 'zh' %}；{% else %}; {% endif %}</span>{%- endunless -%}
+                {%- unless forloop.first -%}<span class="teaching-term-separator">; </span>{%- endunless -%}
                 {%- if term.url -%}
-                  <a href="{{ term.url }}" target="_blank" rel="noopener">{{ term.label[content_lang] }}</a>
+                  <a href="{{ term.url }}" target="_blank" rel="noopener">{{ term.label }}</a>
                 {%- else -%}
-                  <span>{{ term.label[content_lang] }}</span>
+                  <span>{{ term.label }}</span>
                 {%- endif -%}
               {%- endfor -%}
             </span>

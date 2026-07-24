@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /service/
-translation_url: /zh/service/
 title: Academic Service
 description: Academic and professional service.
 nav: true

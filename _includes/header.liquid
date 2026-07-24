@@ -1,21 +1,8 @@
 <header>
-  {% assign is_zh = false %}
-  {% if page.lang == 'zh' %}
-    {% assign is_zh = true %}
-  {% endif %}
-  {% assign language_url = page.translation_url %}
-  {% if language_url == blank %}
-    {% if is_zh %}
-      {% assign language_url = '/' %}
-    {% else %}
-      {% assign language_url = '/zh/' %}
-    {% endif %}
-  {% endif %}
-
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      <a class="navbar-brand home-brand" href="{% if is_zh %}{{ '/zh/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Xinyu Chen</a>
+      <a class="navbar-brand home-brand" href="{{ '/' | relative_url }}">Xinyu Chen</a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -34,45 +21,20 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% if is_zh %}
-            <li class="nav-item {% if page.permalink == '/zh/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/' | relative_url }}">主页</a>
-            </li>
-            <li class="nav-item {% if page.url contains '/zh/publications/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/publications/' | relative_url }}">论文</a>
-            </li>
-            <li class="nav-item {% if page.url contains '/zh/people/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/people/' | relative_url }}">成员</a>
-            </li>
-            <li class="nav-item {% if page.url contains '/zh/teaching/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/teaching/' | relative_url }}">教学</a>
-            </li>
-            <li class="nav-item {% if page.url contains '/zh/service/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/service/' | relative_url }}">服务</a>
-            </li>
-          {% else %}
-            <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
-            </li>
-            <li class="nav-item {% if page.url contains '/publications/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/publications/' | relative_url }}">Publications</a>
-            </li>
-            <li class="nav-item {% if page.url contains '/people/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/people/' | relative_url }}">People</a>
-            </li>
-            <li class="nav-item {% if page.url contains '/teaching/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/teaching/' | relative_url }}">Teaching</a>
-            </li>
-            <li class="nav-item {% if page.url contains '/service/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/service/' | relative_url }}">Service</a>
-            </li>
-          {% endif %}
-          <li class="nav-item language-item">
-            {% if is_zh %}
-              <a class="nav-link language-switch" href="{{ language_url | relative_url }}" lang="en" hreflang="en">EN</a>
-            {% else %}
-              <a class="nav-link language-switch" href="{{ language_url | relative_url }}" lang="zh-CN" hreflang="zh-CN">中文</a>
-            {% endif %}
+          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
+          </li>
+          <li class="nav-item {% if page.url contains '/publications/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/publications/' | relative_url }}">Publications</a>
+          </li>
+          <li class="nav-item {% if page.url contains '/people/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/people/' | relative_url }}">People</a>
+          </li>
+          <li class="nav-item {% if page.url contains '/teaching/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/teaching/' | relative_url }}">Teaching</a>
+          </li>
+          <li class="nav-item {% if page.url contains '/service/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/service/' | relative_url }}">Service</a>
           </li>
         </ul>
       </div>

@@ -1,32 +1,31 @@
 ---
 layout: default
 ---
-{% assign content_lang = page.lang | default: 'en' %}
 {% assign profile = site.data.home.profile %}
 <div class="home-page-shell">
-  <aside class="home-profile-card" aria-label="{% if page.lang == 'zh' %}个人资料{% else %}Profile{% endif %}">
+  <aside class="home-profile-card" aria-label="Profile">
     <img
       class="home-portrait"
       src="{{ profile.image | prepend: '/assets/img/' | relative_url }}"
-      alt="{% if page.lang == 'zh' %}陈鑫宇的个人照片{% else %}Portrait of Xinyu Chen{% endif %}"
+      alt="Portrait of Xinyu Chen"
     >
     <div class="home-profile-body">
       <h1>{{ profile.name }}</h1>
-      <p class="home-role">{{ profile.role[content_lang] }}</p>
+      <p class="home-role">{{ profile.role }}</p>
 
       <div class="home-affiliation">
         {% for affiliation in profile.affiliations %}
-          <a href="{{ affiliation.url }}" target="_blank" rel="noopener">{{ affiliation[content_lang] }}</a>
+          <a href="{{ affiliation.url }}" target="_blank" rel="noopener">{{ affiliation.label }}</a>
         {% endfor %}
       </div>
 
       <dl class="home-contact-list">
         <div>
-          <dt>{% if page.lang == 'zh' %}邮箱{% else %}Email{% endif %}</dt>
+          <dt>Email</dt>
           <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
         </div>
         <div>
-          <dt>{% if page.lang == 'zh' %}办公室{% else %}Office{% endif %}</dt>
+          <dt>Office</dt>
           <dd>{{ profile.office }}</dd>
         </div>
       </dl>
