@@ -12,15 +12,25 @@
   <div class="team-grid">
     {% for member in section.members %}
       <div class="team-card">
-        <div class="team-avatar">{{ member.initials }}</div>
-        <h3>
-          {% if member.website %}
-            <a href="{{ member.website }}">{{ member.name }}</a>
-          {% else %}
-            {{ member.name }}
-          {% endif %}
-        </h3>
-        <p class="team-role">{{ member.start }} - {{ member.end | default: present_label }}</p>
+        <div class="team-member-header">
+          <div class="team-avatar">{{ member.initials }}</div>
+          <h3>
+            {% if member.website %}
+              <a href="{{ member.website }}">{{ member.name }}</a>
+            {% else %}
+              {{ member.name }}
+            {% endif %}
+          </h3>
+        </div>
+        {% if member.start %}
+          <p class="team-role">{{ member.start }} - {{ member.end | default: present_label }}</p>
+        {% endif %}
+        {% if member.graduation_year %}
+          <p class="team-role">{{ member.degree }}, {{ member.graduation_year }}</p>
+        {% endif %}
+        {% if member.destination %}
+          <p class="team-destination">{{ member.destination }}</p>
+        {% endif %}
         {% if member.co_supervisor %}
           <p>
             Co-supervised with

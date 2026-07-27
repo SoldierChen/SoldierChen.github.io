@@ -32,27 +32,6 @@ sections:
         education:
           - degree: BS
             institution: University of Electronic Science and Technology of China (UESTC)
-      - name: Zhenlin Wu
-        initials: ZW
-        start: 2024/12
-        website: https://zlwu92.github.io/
-        co_supervisor:
-          name: Prof. Hongyuan Liu
-          url: https://www.liuhongyuan.com/
-        education:
-          - degree: BS
-            institution: Beijing Jiaotong University
-          - degree: MS
-            institution: Capital Normal University
-      - name: Bi Zeng
-        initials: BZ
-        start: 2024/10
-        co_supervisor:
-          name: Prof. Hongyuan Liu
-          url: https://www.liuhongyuan.com/
-        education:
-          - degree: BS
-            institution: Sun Yat-sen University (SYSU)
       - name: Chenxi Xu
         initials: CX
         start: 2024/09
@@ -93,24 +72,23 @@ sections:
         education:
           - degree: BS
             institution: Jilin University
+  - title: Alumni
+    members:
       - name: Jiashu Zhang
         initials: JZ
-        start: 2024/09
-        education:
-          - degree: BS
-            institution: Southern University of Science and Technology (SUSTech)
+        degree: MPhil
+        graduation_year: 2026
+        destination: Now at ByteDance Seed
       - name: Xingyu Chen
         initials: XC
-        start: 2024/09
-        education:
-          - degree: BS
-            institution: University of Electronic Science and Technology of China (UESTC)
+        degree: MPhil
+        graduation_year: 2026
+        destination: Now at Tencent
       - name: Huangxu Chen
         initials: HC
-        start: 2024/09
-        education:
-          - degree: BS
-            institution: South China University of Technology
+        degree: MPhil
+        graduation_year: 2026
+        destination: Now a PhD student at NUS
 
 # Keep photos newest first.
 photos:
