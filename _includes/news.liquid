@@ -3,7 +3,7 @@
     {% assign news_size = site.news | size %}
     <div class="table-responsive news-scroll" tabindex="0" aria-label="News archive">
       <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
+        {% assign news = site.news | news_display_order %}
         {% if include.limit and site.announcements.limit %}
           {% assign news_limit = site.announcements.limit %}
         {% else %}

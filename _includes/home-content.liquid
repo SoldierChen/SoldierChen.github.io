@@ -55,7 +55,7 @@
     </a>
   </div>
   <ol class="home-timeline" tabindex="0" aria-label="{{ news_text.aria_label }}">
-    {% assign latest_news = site.news | reverse %}
+    {% assign latest_news = site.news | news_display_order %}
     {% for item in latest_news %}
       <li>
         <time datetime="{{ item.date | date: '%Y-%m' }}">
