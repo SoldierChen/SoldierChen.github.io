@@ -6,4 +6,4 @@ related_posts: false
 category: paper
 ---
 
-Our paper "**[MixFP4: Extending NVFP4 to Mixed Micro-Format via Scale-Bit Reuse and Tensor Core Co-design](https://soldierchen.github.io/publications/)**" has been accepted to **ICML 2026**. :tada: Congratulations to Jiaxiang! :clap:
+Our paper "**[MixFP4: Enhancing NVFP4 with Adaptive FP4/INT4 Block Representations]({{ '/publications/' | relative_url }}#MixFP4)**" has been accepted to **ICML 2026**. :tada: Congratulations to Jiaxiang! :clap:
