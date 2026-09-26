@@ -6,4 +6,4 @@ related_posts: false
 category: paper
 ---
 
-**Five papers**, "**[Sparse by Command](https://soldierchen.github.io/publications/)**", "**[Ultra-DSP](https://soldierchen.github.io/publications/)**", "**[RidgeBridge](https://soldierchen.github.io/publications/)**", "**[SCOPE](https://soldierchen.github.io/publications/)**", and "**[MFNNS](https://soldierchen.github.io/publications/)**", have been accepted to **MICRO 2026**. :tada: Congratulations to Afzal, Chenyu, Chenxi, Hongshi, and Rui for the great work! :clap:
+**Five papers**, "**[Sparse by Command](https://soldierchen.github.io/publications/)**", "**[Ultra-DSP]({{ '/publications/' | relative_url }}#UltraDSP)**", "**[RidgeBridge](https://soldierchen.github.io/publications/)**", "**[SCOPE]({{ '/publications/' | relative_url }}#SCOPE)**", and "**[MFNNS]({{ '/publications/' | relative_url }}#MFNNS)**", have been accepted to **MICRO 2026**. :tada: Congratulations to Afzal, Chenyu, Chenxi, Hongshi, and Rui for the great work! :clap:
