@@ -102,6 +102,12 @@ sections:
 photos:
   title: Group Photo
   items:
+    - image: 2026-new-term-begins.jpg
+      alt: CLab group photo at the beginning of the 2026 fall term
+      caption: New term begins, September 2026
+    - image: 2026-new-term-gathering.jpg
+      alt: CLab gathering in September 2026
+      caption: New term gathering, September 2026
     - image: 2025-new-term-begins.jpg
       alt: CLab group photo at the beginning of the 2025 fall term
       caption: New term begins, September 2025
