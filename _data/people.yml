@@ -54,6 +54,14 @@ sections:
             institution: Sun Yat-sen University (SYSU)
   - title: MPhil Students
     members:
+      - name: Ren Li
+        initials: RL
+        start: "2026"
+        education:
+          - degree: BS
+            institution: Nankai University
+          - degree: MS
+            institution: Nankai University
       - name: Jinwen He
         initials: JH
         start: 2025/09
