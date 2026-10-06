@@ -56,7 +56,7 @@ sections:
     members:
       - name: Ren Li
         initials: RL
-        start: "2026"
+        start: 2026/09
         education:
           - degree: BS
             institution: Nankai University
