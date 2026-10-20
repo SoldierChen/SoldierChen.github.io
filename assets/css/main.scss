@@ -115,11 +115,11 @@ $max-content-width: {{ site.max_width }};
 }
 
 .home-portrait {
-  aspect-ratio: 7 / 8;
+  aspect-ratio: 2 / 3;
   display: block;
   max-width: 100%;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: 31% center;
   width: 100%;
 }
 
@@ -1077,7 +1077,7 @@ $max-content-width: {{ site.max_width }};
   }
 
   .home-portrait {
-    aspect-ratio: 7 / 8;
+    aspect-ratio: 2 / 3;
     height: auto;
     width: 100%;
   }
