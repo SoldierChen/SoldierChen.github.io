@@ -56,7 +56,7 @@
   </div>
   <ol class="home-timeline" aria-label="{{ news_text.aria_label }}">
     {% assign latest_news = site.news | news_display_order %}
-    {% for item in latest_news limit: 10 %}
+    {% for item in latest_news limit: 5 %}
       <li>
         <time datetime="{{ item.date | date: '%Y-%m' }}">
           {{ item.date | date: '%b %Y' }}
