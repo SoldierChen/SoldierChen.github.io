@@ -826,14 +826,6 @@ $max-content-width: {{ site.max_width }};
   text-decoration: none;
 }
 
-.reference-inner .news-scroll {
-  max-height: 560px;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  scrollbar-color: rgba(25, 153, 136, 0.55) #eeece7;
-  scrollbar-width: thin;
-}
-
 .reference-inner .news table {
   margin: 0;
 }
