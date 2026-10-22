@@ -382,34 +382,6 @@ $max-content-width: {{ site.max_width }};
   padding: 0;
 }
 
-.home-timeline {
-  max-height: 390px;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding-right: 12px;
-  scrollbar-color: rgba(25, 153, 136, 0.55) #eeece7;
-  scrollbar-width: thin;
-}
-
-.home-timeline:focus-visible {
-  outline: 2px solid rgba(25, 153, 136, 0.45);
-  outline-offset: 5px;
-}
-
-.home-timeline::-webkit-scrollbar {
-  width: 7px;
-}
-
-.home-timeline::-webkit-scrollbar-track {
-  background: #eeece7;
-  border-radius: 8px;
-}
-
-.home-timeline::-webkit-scrollbar-thumb {
-  background: rgba(25, 153, 136, 0.55);
-  border-radius: 8px;
-}
-
 .home-timeline li {
   border-bottom: 1px solid #ebe9e4;
   display: grid;

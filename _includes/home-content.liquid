@@ -54,7 +54,7 @@
       {{ news_text.all_label }} →
     </a>
   </div>
-  <ol class="home-timeline" tabindex="0" aria-label="{{ news_text.aria_label }}">
+  <ol class="home-timeline" aria-label="{{ news_text.aria_label }}">
     {% assign latest_news = site.news | news_display_order %}
     {% for item in latest_news %}
       <li>
