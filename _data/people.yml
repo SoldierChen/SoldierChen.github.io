@@ -10,6 +10,26 @@ intro:
 sections:
   - title: PhD Students
     members:
+      - name: Wanyu Wang
+        initials: WW
+        start: 2026/09
+        education:
+          - degree: BS
+            institution: Hefei University of Technology (HFUT)
+          - degree: MS
+            institution: Institute of Computing Technology, Chinese Academy of Sciences
+      - name: Binke Wang
+        initials: BW
+        start: 2026/09
+        education:
+          - degree: BS
+            institution: University of Electronic Science and Technology of China (UESTC)
+      - name: Yixiang Zhu
+        initials: YZ
+        start: 2026/09
+        education:
+          - degree: BS
+            institution: Nankai University
       - name: Jingyu Guo
         initials: JG
         start: 2025/09
