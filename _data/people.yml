@@ -17,9 +17,9 @@ sections:
           - degree: BS
             institution: Hefei University of Technology (HFUT)
           - degree: MS
-            institution: Institute of Computing Technology
-      - name: Binke Wang
-        initials: BW
+            institution: University of Chinese Academy of Sciences (UCAS)
+      - name: Binke Zhao
+        initials: BZ
         start: 2026/09
         education:
           - degree: BS
