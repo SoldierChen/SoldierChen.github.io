@@ -66,6 +66,8 @@ news:
 awards:
   title: Awards
   items:
+    - title: MICRO Hall of Fame
+      meta: MICRO-59 · Athens, Greece · November 3, 2026
     - title: First Prize, Graph Computing System Design Challenge
       meta: CCF SYS · 2025
     - title: AMD HACC Outstanding Researcher Award
